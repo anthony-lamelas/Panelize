@@ -1,7 +1,7 @@
 import openai       
 import os
 import requests
-from transformers.models.blip import BlipProcessor, BlipForConditionalGeneration
+from transformers import BlipProcessor, BlipForConditionalGeneration
 import torch
 from io import BytesIO
 from PIL import Image
