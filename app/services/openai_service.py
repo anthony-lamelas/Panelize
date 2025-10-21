@@ -150,7 +150,7 @@ def caption_image(image_bytes: bytes) -> str:
 
     # Preprocess & generate
     inputs = processor(img, return_tensors="pt") # type: ignore
-    inputs = {k: v.to(device) for k, v in inputs.items()}  # ✅ Move tensors to device
+    inputs = {k: v.to(device) for k, v in inputs.items()}  # Move tensors to device
 
     with torch.no_grad():
         output_ids = model.generate(
