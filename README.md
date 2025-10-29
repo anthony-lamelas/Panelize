@@ -1,33 +1,33 @@
-# 🧠 Panelize Backend
+# Panelize Backend
 
 The backend for **Panelize**, an AI-powered comic book and manga panel generator. This Flask-based server takes in user-written stories and returns a sequence of AI-generated images with captions — powered by **GPT-4o**, **DALL·E 3**, and **BLIP**.
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
-- 🐍 **Python 3.10+**
-- 🔥 **Flask** — lightweight REST API framework
-- 🤖 **OpenAI API (GPT-4o & DALL·E 3)** — for prompt engineering and image generation
-- 🧠 **Hugging Face Transformers** — for BLIP image captioning
-- 🖼️ **Pillow (PIL)** — for image processing
-- 🌐 **CORS** — to allow frontend interaction
-- 🧪 **Requests** — for image retrieval from OpenAI URLs
-
----
-
-## ✨ Features
-
-- 🔗 Story decomposition into sequential panel prompts using GPT-4o
-- 🎨 Image generation with DALL·E 3 in chosen art styles (manga, comic book, custom)
-- 🖋️ Image captioning with BLIP to inform chained prompts
-- 🔁 Prompt chaining logic to maintain visual-narrative flow across panels
-- 📦 REST API returns panel prompts, images, and captions as JSON
-- 🔐 API key handling via environment variables
+- **Python 3.10+**
+- **Flask** — lightweight REST API framework
+- **OpenAI API (GPT-4o & DALL·E 3)** — for prompt engineering and image generation
+- **Hugging Face Transformers** — for BLIP image captioning
+- **Pillow (PIL)** — for image processing
+- **CORS** — to allow frontend interaction
+- **Requests** — for image retrieval from OpenAI URLs
 
 ---
 
-## 📦 Local Setup
+## Features
+
+- Story decomposition into sequential panel prompts using GPT-4o
+- Image generation with DALL·E 3 in chosen art styles (manga, comic book, custom)
+- Image captioning with BLIP to inform chained prompts
+- Prompt chaining logic to maintain visual-narrative flow across panels
+- REST API returns panel prompts, images, and captions as JSON
+- API key handling via environment variables
+
+---
+
+## Local Setup
 
 ### 1. Clone the Repo
 ```bash
@@ -57,7 +57,7 @@ $env:OPENAI_API_KEY="your-key-here"
 
 ---
 
-## 🚀 Running the Server
+## Running the Server
 
 ```bash
 flask run
@@ -67,7 +67,7 @@ Server will be live at: [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
 ---
 
-## 📡 API Usage
+## API Usage
 
 ### POST `/api/generate-panels`
 
@@ -96,7 +96,7 @@ Server will be live at: [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
 ---
 
-## 🧠 Project Structure
+## Project Structure
 
 ```
 panelize_backend/
@@ -111,6 +111,6 @@ panelize_backend/
 
 ---
 
-## 📝 License
+## License
 
 MIT License © 2025 Anthony Lamelas
